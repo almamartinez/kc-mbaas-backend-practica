@@ -12,7 +12,7 @@ var api = {
             "(SELECT count(valuation) FROM Valuations WHERE Valuations.newsId = News.id) as numberValuations, " +
             "(SELECT AVG(valuation) FROM Valuations WHERE Valuations.newsId = News.id) as avgValuations," +
             "locateLongitude,locateLatitude," +
-            "locateAddress FROM News JOIN Authors on News.authorID = Author.idUser" +
+            "locateAddress FROM News JOIN Authors on News.authorID = Authors.idUser" +
                 "WHERE publishStatus = 2"
         };
 
