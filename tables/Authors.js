@@ -13,7 +13,7 @@ table.columns = {
 };
 
 // Para hacer que la tabla sea estático y no podamos modificarlo
-table.dynamicSchema = false;
+//table.dynamicSchema = false;
 
 /*
  * Trigger para insert

@@ -17,7 +17,7 @@ table.columns = {
 };
 
 
-table.dynamicSchema = false;
+//table.dynamicSchema = false;
 
 table.insert(function(context){
     //Id Usuario que ha generado el insert, para añadirlo a la tabla:
