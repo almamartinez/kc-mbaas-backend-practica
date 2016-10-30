@@ -9,7 +9,7 @@ var api = {
         var user = context.user.id;
 
         var query = {
-            sql : "SELECT title, content, authorId, name, surname, photoPath, publishStatus, " +
+            sql : "SELECT News.id, title, content, authorId, name, surname, photoPath, publishStatus, " +
             "(SELECT count(valuation) FROM Valuations WHERE Valuations.newsId = News.id) as numberValuations, " +
             "(SELECT AVG(valuation) FROM Valuations WHERE Valuations.newsId = News.id) as avgValuations," +
             "locateLongitude,locateLatitude," +
