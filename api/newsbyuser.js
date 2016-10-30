@@ -18,8 +18,10 @@ var api = {
             parameters : [{user: user}]
         };
 
+        console.log (query);
         req.azureMobile.data.execute(query)
             .then(function (result) {
+                console.log(result);
                 res.json(result);
         });
     }
