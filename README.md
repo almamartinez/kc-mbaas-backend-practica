@@ -12,4 +12,4 @@ Pendiente:
     * Valoración de noticias
     * Uso de analíticas.
 * Parte **Authenticated**:
-    * Lectura y escritura de imágenes en el Storage, guardando en las tablas la url a ellas.
+    * Lectura y escritura de imágenes en el Storage, y guardando en las tablas de la url del storage a las mismas.
