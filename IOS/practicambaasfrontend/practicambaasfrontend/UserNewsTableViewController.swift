@@ -39,7 +39,8 @@ class UserNewsTableViewController: UITableViewController {
     func getRegisteredUser() {
         let tableMS = client.table(withName: "Authors")
         
-        let predicate = NSPredicate(format: "id = '\(client.currentUser?.userId!)'")
+        let predicate = NSPredicate(format: "idUser == %@",(client.currentUser?.userId!)!)
+        
         tableMS.read(with: predicate, completion: { (results, error) in
             if let _ = error{
                 print (error!)
@@ -48,9 +49,10 @@ class UserNewsTableViewController: UITableViewController {
             if let _ = results {
                 self.author = results?.items?.first as [AnyHashable : AnyObject]?
                 
-            }
-            else{
-                self.presentPopUpLogin()
+                if self.author == nil
+                {
+                    self.presentPopUpLogin()
+                }
             }
             
         })
@@ -88,7 +90,9 @@ class UserNewsTableViewController: UITableViewController {
     func inserNewAutor(_ name: String, secondName: String) {
         
         let tableMS = client.table(withName: "Authors")
-        
+        self.author = [AnyHashable : AnyObject]()
+        self.author?["name"] = name as AnyObject?
+        self.author?["surname"] = secondName as AnyObject?
         tableMS.insert(["name" : name, "surname": secondName]) { (result, error) in
             
             if let _ = error {

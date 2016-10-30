@@ -14,8 +14,6 @@ var api = {
             "locateLongitude,locateLatitude," +
             "locateAddress FROM News JOIN Authors on News.authorID = Author.idUser" +
                 "WHERE publishStatus = 2"
-
-
         };
 
         context.data.execute(query)

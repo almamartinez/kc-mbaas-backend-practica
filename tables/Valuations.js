@@ -10,5 +10,5 @@ table.columns = {
     "valuation" : "Number"
 };
 
-table.dynamicSchema = false;
+//table.dynamicSchema = false;
 table.access = "anonymous";
