@@ -1,0 +1,24 @@
+{
+  "name": "kc-mbaas-practica",
+  "version": "1.0.0",
+  "description": "Backend para la práctica de kc-mbaas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almamartinez/kc-mbaas-practica.git"
+  },
+  "author": "Alma Martinez Salazar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/almamartinez/kc-mbaas-practica/issues"
+  },
+  "homepage": "https://github.com/almamartinez/kc-mbaas-practica#readme",
+  "dependencies": {
+    "azure-mobile-apps": "^3.0.2",
+    "express": "^4.14.0",
+    "swagger-ui": "^2.2.6"
+  }
+}
