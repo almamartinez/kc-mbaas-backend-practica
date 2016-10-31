@@ -23,6 +23,6 @@ var api = {
     }
 };
 
-api.get.access = 'anonymous';
+api.access = 'anonymous';
 
 module.exports = api;
